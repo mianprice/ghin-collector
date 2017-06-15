@@ -8,8 +8,6 @@ ghin_nums.forEach(function(ghin_num) {
   request('http://m.ghin.com/HLR.aspx?ghinno=' + ghin_num, function(error, response, body) {
     console.log("Error: ", error);
     console.log("StatusCode: ", response && response.statusCode);
-    // console.log("Body: ", body);
-    // fs.writeFile('page.html', body, 'utf8');
     $ = cheerio.load(body);
     var h = $("#ctl00_cphContent_lblHI").text();
     h = parseFloat(h);
