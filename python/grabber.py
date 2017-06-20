@@ -17,7 +17,3 @@ for ghin in ghin_nums:
         'handicap': h,
         'club': c
     }
-
-# Print results to command line
-# for k in result.keys():
-#     print "GHIN: %s\n%r\n" % (k, result[k])
